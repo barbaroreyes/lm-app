@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "lmapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authlmapp57b06e03",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
